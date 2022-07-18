@@ -31,16 +31,31 @@
 // const val3 = "const変数を再宣言";
 
 // constで定義したオブジェクトはプロパティの変更は可能
-const val4 = {
-  name: "なまえ",
-  age: 39
-};
-val4.name = "なまえを上書き";
-val4.address = "東京";
-console.log(val4);
+// const val4 = {
+//   name: "なまえ",
+//   age: 39
+// };
+// val4.name = "なまえを上書き";
+// val4.address = "東京";
+// console.log(val4);
 
-// constで定義した配列はプロパティの変更は可能
-const val5 = ["dog", "cat"];
-val5[0] = "bird";
-val5.push("monkey");
-console.log(val5);
+// // constで定義した配列はプロパティの変更は可能
+// const val5 = ["dog", "cat"];
+// val5[0] = "bird";
+// val5.push("monkey");
+// console.log(val5);
+
+/**
+ * テンプレート文字列
+ */
+const name = "なまえ";
+const age = 28;
+// 「私の名前はなまえです。年齢は28才です。」
+
+// 従来の方法
+const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+console.log(message1);
+
+// テンプレート文字列を用いた方法
+const message2 = `私の名前は${name}です。年齢は${age}です。`;
+console.log(message2);
