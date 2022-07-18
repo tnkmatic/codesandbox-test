@@ -48,14 +48,35 @@
 /**
  * テンプレート文字列
  */
-const name = "なまえ";
-const age = 28;
-// 「私の名前はなまえです。年齢は28才です。」
+// const name = "なまえ";
+// const age = 28;
+// // 「私の名前はなまえです。年齢は28才です。」
 
-// 従来の方法
-const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
-console.log(message1);
+// // 従来の方法
+// const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+// console.log(message1);
 
-// テンプレート文字列を用いた方法
-const message2 = `私の名前は${name}です。年齢は${age}です。`;
-console.log(message2);
+// // テンプレート文字列を用いた方法
+// const message2 = `私の名前は${name}です。年齢は${age}です。`;
+// console.log(message2);
+
+/**
+ * アロー関数
+ */
+// 従来の関数
+// function func1(str) {
+//   return str;
+// }
+const func1 = function (str) {
+  return str;
+};
+console.log(func1("てすと"));
+
+// アロー関数
+const func2 = (str) => str; // 単一行のときに{}は不要、return文字列も不要。
+console.log(func2("アロー関数"));
+
+const func3 = (num1, num2) => {
+  return num1 + num2; // {}囲いの際は単一行でもreturn句は必要。
+};
+console.log(func3(10, 20));
