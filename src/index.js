@@ -67,19 +67,19 @@
 // function func1(str) {
 //   return str;
 // }
-const func1 = function (str) {
-  return str;
-};
-console.log(func1("てすと"));
+// const func1 = function (str) {
+//   return str;
+// };
+// console.log(func1("てすと"));
 
-// アロー関数
-const func2 = (str) => str; // 単一行のときに{}は不要、return文字列も不要。
-console.log(func2("アロー関数"));
+// // アロー関数
+// const func2 = (str) => str; // 単一行のときに{}は不要、return文字列も不要。
+// console.log(func2("アロー関数"));
 
-const func3 = (num1, num2) => {
-  return num1 + num2; // {}囲いの際は単一行でもreturn句は必要。
-};
-console.log(func3(10, 20));
+// const func3 = (num1, num2) => {
+//   return num1 + num2; // {}囲いの際は単一行でもreturn句は必要。
+// };
+// console.log(func3(10, 20));
 
 /**
  * 分割代入
@@ -96,9 +96,15 @@ console.log(func3(10, 20));
 // const message2 = `名前は${name}です。年齢は${age}です。`;
 // console.log(message2);
 
-const myProfile = ["z", "x"];
-const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}`;
-console.log(message3);
-const [name, age] = myProfile;
-const message4 = `名前は${name}です。年齢は${age}`;
-console.log(message4);
+// const myProfile = ["z", "x"];
+// const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}`;
+// console.log(message3);
+// const [name, age] = myProfile;
+// const message4 = `名前は${name}です。年齢は${age}`;
+// console.log(message4);
+
+/**
+ * デフォルト値、引数など
+ */
+const sayHello = (name = "ゲスト") => console.log(`こんにちは${name}さん`);
+sayHello("おなまえ");
